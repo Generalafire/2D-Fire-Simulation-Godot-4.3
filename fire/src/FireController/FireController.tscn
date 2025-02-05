@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b6w1ce7wbi1qm"]
+
+[ext_resource type="Script" path="res://src/FireController/FireController.gd" id="1_31xq5"]
+
+[node name="FireController" type="Node2D"]
+script = ExtResource("1_31xq5")
