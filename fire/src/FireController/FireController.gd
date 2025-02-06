@@ -35,11 +35,6 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	var mouse_position = tilemap.local_to_map(get_global_mouse_position())
-	#if tiles.has(mouse_position):
-		#print(tiles[mouse_position]["heat"])
-		#if (tiles[mouse_position]["heat"] >= tiles[mouse_position]["maximum_heat"]) and tiles[mouse_position]["is_destructible"] and !tiles[mouse_position]["is_flammable"] and !tiles_on_fire.has(mouse_position):
-			#print('hi')
 	if Engine.get_frames_drawn() % frames_per_tick == 0:
 		var tiles_on_fire_deletion_queue = []
 		var tiles_now_on_fire = []
