@@ -37,7 +37,6 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Engine.get_frames_drawn() % frames_per_tick == 0:
 		var tiles_on_fire_deletion_queue = []
-		var tiles_now_on_fire = []
 		for tile_coords in tiles_on_fire:
 			var tile_to_be_removed = decrement_burn_time(tile_coords)
 			if tile_to_be_removed != Vector2i(1e6, 1e6): #An invalid return value. If you have 1e6 tiles and your computer is not frozen or busted, then it must be quantum or super.
